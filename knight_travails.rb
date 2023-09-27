@@ -6,7 +6,7 @@ end
 
 class Knight
   attr_accessor :position, :all_possible_moves
-  def initialize(position)
+  def initialize(position = [3, 3])
     @position = position
     @moves = check_moves(position)
   end
